@@ -1,0 +1,16 @@
+{
+  "name": "Kurio Arts & Craft POS",
+  "short_name": "Kurio POS",
+  "description": "Inventory and point-of-sale system for small craft and event-supply shops.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#dcd7c3",
+  "theme_color": "#4e4b42",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

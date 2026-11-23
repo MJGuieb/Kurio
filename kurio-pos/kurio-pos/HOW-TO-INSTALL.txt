@@ -1,0 +1,36 @@
+KURIO POS - HOW TO INSTALL AS AN APP (PWA)
+==========================================
+
+Keep these files together in one folder:
+  index.html
+  style.css
+  manifest.webmanifest
+  sw.js
+  icons/   (icon-192.png, icon-512.png, icon-maskable-512.png, apple-touch-icon.png)
+
+The system still works by double-clicking index.html, but the "Install app"
+option and offline mode only work when it is opened from a web address
+(http://localhost or a website). Browsers don't allow installing a file opened
+from your computer.
+
+OPTION A - On the shop computer (localhost)
+  1. Install Python (python.org), or use VS Code's "Live Server" extension.
+  2. Open a terminal in the folder and run:   python -m http.server 8000
+  3. In Chrome or Edge, open:   http://localhost:8000
+  4. Profile menu (top right) > "Install app"
+     (or the install icon at the right side of the address bar).
+
+OPTION B - Free hosting (works on phones/tablets too)
+  Upload the folder to GitHub Pages, Netlify or Vercel (all free),
+  open the https:// link in Chrome/Edge (or Safari on iPhone: Share > Add to Home Screen),
+  then choose "Install app".
+
+AFTER INSTALLING
+  - Kurio opens in its own window with its own icon (desktop / Start menu / home screen).
+  - It opens and works even with no internet.
+  - Data stays on that device (same as before). Use Settings > Data & security >
+    Download backup to move or keep data safe.
+
+WHEN YOU UPDATE index.html OR style.css
+  Open sw.js and change   kurio-pos-v1   to   kurio-pos-v2   (v3, v4...),
+  so installed copies pick up the new version.
